@@ -7,9 +7,9 @@ public class Main {
     public static void main(String[] args) {
         ApplianceDao applianceDao = new ApplianceDaoImpl(); // the implementation is the only way to get to the IngredientDao
         System.out.println("Inserting new Appliances");
-        Appliance ap1 = new Appliance("household","refrigerator","on", 60);
-        Appliance ap2 = new Appliance("household", "microwave", "off",15);
-        Appliance ap3 = new Appliance("household","Dishwasher","on", 45);
+        Appliance ap1 = new Appliance(1,"household","refrigerator","on", 60);
+        Appliance ap2 = new Appliance(2,"household", "microwave", "off",15);
+        Appliance ap3 = new Appliance(3,"household","Dishwasher","on", 45);
 
 
         ap1 =  ApplianceDao.insertAppliance(ap1);
