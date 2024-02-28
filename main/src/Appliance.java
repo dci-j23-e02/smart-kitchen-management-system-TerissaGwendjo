@@ -78,7 +78,7 @@ public class Appliance {
                 ", name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 ", status='" + status + '\'' +
-                ", usageTime=" + usage_time +
+                ", usage_time=" + usage_time +
                 '}';
     }
 }

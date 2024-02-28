@@ -60,8 +60,8 @@ public class ApplianceDaoImpl implements ApplianceDao {
             ){
                 preparedStatement.setString(1, appliance.getName());
                 preparedStatement.setString(2, appliance.getType());
-              /*  preparedStatement.setString(3, appliance.getStatus());
-                preparedStatement.setInt(4,appliance.getUsageTime());*/
+               preparedStatement.setString(3, appliance.getStatus());
+                preparedStatement.setInt(4,appliance.getUsage_time());
                 int affectedrows = preparedStatement.executeUpdate();
                 if(affectedrows >0){
                     return getApplianceByName(appliance.getName());
@@ -69,7 +69,6 @@ public class ApplianceDaoImpl implements ApplianceDao {
             }catch(SQLException e){
                 e.printStackTrace();
             }
-
             return null;
         }
 

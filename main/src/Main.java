@@ -5,18 +5,18 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-       /* ApplianceDao applianceDao = new ApplianceDaoImpl(); // the implementation is the only way to get to the IngredientDao
+       ApplianceDao applianceDao = new ApplianceDaoImpl(); // the implementation is the only way to get to the IngredientDao
         System.out.println("Inserting new Appliances");
-        Appliance ap1 = new Appliance(1,"household","refrigerator","on", 60);
-        Appliance ap2 = new Appliance(2,"household", "microwave", "off",15);
-        Appliance ap3 = new Appliance(3,"household","Dishwasher","on", 45);
+        Appliance ap1 = new Appliance(4,"household","bread toaster","on", 3);
+        Appliance ap2 = new Appliance("household", "vacuum cleaner", "off",20);
+        Appliance ap3 = new Appliance("household","heater","on", 120);
 
 
         ap1 =  ApplianceDao.insertAppliance(ap1);
-        if(ap1 != null)  System.out.println("Refrigerator appliance inserted successfully.");
+        if(ap1 != null)  System.out.println("Bread toaster appliance inserted successfully.");
         System.out.println(ap1);
 
-
+/*
         ap2 = ApplianceDao.insertAppliance(ap2);
         if( ap2 != null ){
             System.out.println("Microwave appliance inserted successfully.");
@@ -48,17 +48,16 @@ public class Main {
                 System.out.println("microwave is deleted");
             }}
 
-    }
 */
 
-        ApplianceDao applianceDao = new ApplianceDaoImpl();
+       /* ApplianceDao applianceDao = new ApplianceDaoImpl();
 
         System.out.println("List all Appliances:");
         Set<Appliance> applianceSet = applianceDao.getAllAppliances();
         for (Appliance appliance: applianceSet) {
             System.out.println(appliance);
         }
-
+        */
     }
 }
 

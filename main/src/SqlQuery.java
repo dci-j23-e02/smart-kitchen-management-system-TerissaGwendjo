@@ -5,8 +5,8 @@ public enum SqlQuery {
 
     GET_APPLIANCES_BY_ID ("SELECT * FROM appliances WHERE id = ?"), //This function is likely designed to retrieve an ingredient from a database based on its unique identifier (id)
     GET_ALL_APPLIANCES("SELECT * FROM appliances"),
-    INSERT_APPLIANCE("INSERT INTO appliances (name, quantity) VALUES (?,?)"),
-    UPDATE_APPLIANCE("UPDATE appliances SET name = ?, quantity = ? WHERE ID = ?"),
+    INSERT_APPLIANCE("INSERT INTO appliances (id,name, type, status,usage_time) VALUES (?,?,?,?,?)"),
+    UPDATE_APPLIANCE("UPDATE appliances SET name = ?, type = ? WHERE ID = ?"),
     DELETE_APPLIANCE("DELETE FROM appliances WHERE id = ?"),
     GET_APPLIANCE_BY_NAME("SELECT * FROM appliances WHERE name = ?");
 
