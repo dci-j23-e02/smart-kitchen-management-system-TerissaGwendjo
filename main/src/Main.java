@@ -5,7 +5,7 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        ApplianceDao applianceDao = new ApplianceDaoImpl(); // the implementation is the only way to get to the IngredientDao
+       /* ApplianceDao applianceDao = new ApplianceDaoImpl(); // the implementation is the only way to get to the IngredientDao
         System.out.println("Inserting new Appliances");
         Appliance ap1 = new Appliance(1,"household","refrigerator","on", 60);
         Appliance ap2 = new Appliance(2,"household", "microwave", "off",15);
@@ -49,7 +49,17 @@ public class Main {
             }}
 
     }
+*/
 
+        ApplianceDao applianceDao = new ApplianceDaoImpl();
+
+        System.out.println("List all Appliances:");
+        Set<Appliance> applianceSet = applianceDao.getAllAppliances();
+        for (Appliance appliance: applianceSet) {
+            System.out.println(appliance);
+        }
+
+    }
 }
 
 

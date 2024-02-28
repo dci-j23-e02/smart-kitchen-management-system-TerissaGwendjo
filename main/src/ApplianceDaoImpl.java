@@ -31,7 +31,7 @@ public class ApplianceDaoImpl implements ApplianceDao {
         appliance.setName(resultSet.getString("name"));
         appliance.setType(resultSet.getString("type"));
         appliance.setStatus(resultSet.getString("status"));
-        appliance.setUsageTime(resultSet.getInt("usage time"));
+        appliance.setUsage_time(resultSet.getInt("usage_time"));
         return appliance;
     }
 
@@ -100,7 +100,7 @@ public class ApplianceDaoImpl implements ApplianceDao {
             preparedStatement.setString(1, appliance.getName());
             preparedStatement.setString(2, appliance.getType());
             preparedStatement.setString(3, appliance.getStatus());
-            preparedStatement.setInt(4,appliance.getUsageTime());
+            preparedStatement.setInt(4,appliance.getUsage_time());
             preparedStatement.setInt(5,appliance.getId());
 
             int affectedRows = preparedStatement.executeUpdate();

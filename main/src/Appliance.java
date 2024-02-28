@@ -6,27 +6,27 @@ public class Appliance {
     private String name;
     private String type;
     private String status;
-    private Integer usageTime;
+    private Integer usage_time;
 
     // Constructors
     public Appliance() {
     }
 
     // Constructor without ID (for insertion purposes where ID is auto-generated)
-    public Appliance(String name, String type, String status, int usageTime) {
+    public Appliance(String name, String type, String status, int usage_time) {
         this.name = name;
         this.type = type;
         this.status = status;
-        this.usageTime = usageTime;
+        this.usage_time = usage_time;
     }
 
     // Constructor with all fields (including ID)
-    public Appliance(int id, String name, String type, String status, int usageTime) {
+    public Appliance(int id, String name, String type, String status, int usage_time) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.status = status;
-        this.usageTime = usageTime;
+        this.usage_time = usage_time;
     }
 
     // Getters and setters
@@ -62,12 +62,12 @@ public class Appliance {
         this.status = status;
     }
 
-    public int getUsageTime() {
-        return usageTime;
+    public int getUsage_time() {
+        return usage_time;
     }
 
-    public void setUsageTime(int usageTime) {
-        this.usageTime = usageTime;
+    public void setUsage_time(int usage_time) {
+        this.usage_time = usage_time;
     }
 
     // toString method for easy printing
@@ -78,7 +78,7 @@ public class Appliance {
                 ", name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 ", status='" + status + '\'' +
-                ", usageTime=" + usageTime +
+                ", usageTime=" + usage_time +
                 '}';
     }
 }
